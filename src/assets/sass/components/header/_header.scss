@@ -1,0 +1,5 @@
+.header {
+    @include between;
+    gap: 25px;
+    margin-bottom: 80px;
+}
