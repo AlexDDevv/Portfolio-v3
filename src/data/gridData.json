@@ -1,0 +1,63 @@
+{
+    "text": [
+        {
+            "id": 1,
+            "name": "presentation",
+            "title": "Alexis Delporte, web developer",
+            "subtitle": "Journaling",
+            "events": [
+                {
+                    "date": "• 29/04/24: ",
+                    "content": "Graduation: Front-end developer"
+                },
+                {
+                    "date": "• 10/07/20: ",
+                    "content": "Graduation: Pharmacy assistant"
+                },
+                {
+                    "date": "• 10/07/17: ",
+                    "content": "First year of dietician school: mistake"
+                },
+                {
+                    "date": "• 01/12/15: ",
+                    "content": "Few months of STAPS: big mistake"
+                },
+                {
+                    "date": "• 10/07/15: ",
+                    "content": "Graduation: BAC STL"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "adventure",
+            "title": "My adventure lasting two years",
+            "subtitle": "Some accomplished things 🎉",
+            "events": [
+                "• Learning HTML/CSS and JS alongside my work in pharmacy",
+                "• My first portfolio (ugly)",
+                "• A lot of Frontend Mentor challenges",
+                "• Resign to start my new life (I should it before but np)",
+                "• Start front-end training with OpenClassrooms",
+                "• My first big personal project",
+                "• My current portfolio (better)"
+            ]
+        }
+    ],
+    "app": [
+        {
+            "id": "3",
+            "name": "library",
+            "title": "My little Library",
+            "subtitle": "Personal project 📖",
+            "cover": "/MyLittleLibrary.webp"
+        },
+        {
+            "id": "4",
+            "name": "space",
+            "title": "Space Tourism",
+            "subtitle": "Frontend Mentor challenge 🚀",
+            "cover": "/SpaceTourism.webp"
+        }
+    ]
+}
