@@ -59,5 +59,29 @@
             "subtitle": "Frontend Mentor challenge 🚀",
             "cover": "/SpaceTourism.webp"
         }
+    ],
+    "social": [
+        {
+            "id": 5,
+            "name": "instagram",
+            "avatar": "/avatar.webp",
+            "profil": "sport.devweb",
+            "pseudo": "Alexis D",
+            "link": "https://www.instagram.com/sport.devweb/",
+            "icon": "fa-brands fa-instagram",
+            "title": "Instagram",
+            "cover": "/profilInsta.webp"
+        },
+        {
+            "id": 6,
+            "name": "twitter",
+            "avatar": "/avatar.webp",
+            "profil": "SportingDevWeb",
+            "pseudo": "@Sport_DevWeb",
+            "link": "https://twitter.com/Sport_DevWeb",
+            "icon": "fa-brands fa-x-twitter",
+            "title": "X",
+            "tweet": "My first challenge on Spikes, an inspiring platform that I joined to improve my front-end development even further. Let's code!"
+        }
     ]
 }
