@@ -1,0 +1,52 @@
+.library, .space {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        color: $grayColor;
+        font-size: 16px;
+    }
+}
+.library {
+    background-image: url("./src/assets/img/bgLibrary.webp");
+    padding: 30px 0 0 50px;
+    overflow: hidden;
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cover {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            max-height: 200px;
+            border-radius: 10px;
+        }
+    }
+}
+.space {
+    background-image: url("./src/assets/img/bgSpace.webp");
+    padding: 30px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    grid-area: d;
+
+    .cover {
+        height: 75%;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            height: 100%;
+            border-top-left-radius: 10px;
+        }
+    }
+}
