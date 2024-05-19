@@ -1,15 +1,20 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 export default function BentoText({ name, title, subtitle, events }) {
     return (
         <div className={`bento-item ${name}`}>
             <div className="titles">
                 {name === "presentation" ? (
-                    <h2 className='title'><span className='bolder'>Alexis Delporte -</span> {title}</h2>
+                    <h1 className='title'><span className='bolder'>Alexis Delporte -</span> {title}</h1>
                 ) : (
                     <h2 className="title">{title}</h2>
                 )}
-                <h3 className="subtitle">{subtitle}</h3>
+                {name === "presentation" ? (
+                    <h2 className="subtitle">{subtitle}</h2>
+                ) : (
+                    <h3 className="subtitle">{subtitle}</h3>
+                )}
             </div>
             <div className="content">
                 {events && Array.isArray(events) && (
@@ -24,13 +29,19 @@ export default function BentoText({ name, title, subtitle, events }) {
                         ))
                     ) : (
                         events.map((event, i) => (
-                            <p className='text-bento' key={`${name}-${i}`}>
-                                {event}
-                            </p>
+                            <>
+                                <p className='text-bento' key={`${name}-${i}`}>
+                                    {event}
+                                </p>
+                                <i class="fa-solid fa-down-long"></i>
+                            </>
                         ))
                     )
                 )}
             </div>
+            <Link to={"/about"} title='About me' className='redirection'>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+            </Link>
         </div>
     );
 }
