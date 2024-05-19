@@ -4,7 +4,11 @@ export default function BentoText({ name, title, subtitle, events }) {
     return (
         <div className={`bento-item ${name}`}>
             <div className="titles">
-                <h2 className="title">{title}</h2>
+                {name === "presentation" ? (
+                    <h2 className='title'><span className='bolder'>Alexis Delporte -</span> {title}</h2>
+                ) : (
+                    <h2 className="title">{title}</h2>
+                )}
                 <h3 className="subtitle">{subtitle}</h3>
             </div>
             <div className="content">
