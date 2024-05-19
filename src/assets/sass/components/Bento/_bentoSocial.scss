@@ -1,6 +1,6 @@
 .instagram, .twitter, .github {
     background-color: rgb(29, 29, 29);
-    padding: 30px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,7 +78,7 @@
 
         .instagram-preview {
             width: 95%;
-            max-height: 125px;
+            max-height: 110px;
             object-fit: cover;
             object-position: 50% 0;
             border-radius: 10px;
