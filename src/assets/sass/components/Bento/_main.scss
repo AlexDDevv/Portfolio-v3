@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 325px);
+    grid-template-areas: 
+    "a a b b"
+   "a a e g"
+    "d c c g"
+   "d c c f";
+    gap: 15px;
+    margin-bottom: 100px;
+}
