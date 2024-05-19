@@ -1,0 +1,112 @@
+.instagram, .twitter, .github {
+    background-color: rgb(29, 29, 29);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .profil-container {
+        @include between;
+
+        .profil {
+            @include center;
+            gap: 10px;
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .name {
+                color: white;
+
+                .title-profil {
+                    font-size: 16px;
+                }
+                .title-pseudo {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                }
+            }
+        }
+        .social-link {
+            i {
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+    .redirect-social {
+        background: transparent;
+        border: 1px solid $grayColor;
+        width: 100%;
+        border-radius: 100px;
+        outline: none;
+        transition: background 0.2s ease-in-out;
+
+        a {
+            color: white;
+            font-family: $bodyFont;
+            letter-spacing: 1px;
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            transition: color 0.2s ease-in-out;
+        }
+
+        &:hover {
+            background:white;
+
+            a {
+                color: rgb(29, 29, 29);
+            }
+        }
+    }
+}
+.instagram {
+    grid-area: e;
+    
+    .social-content {
+        @include center;
+
+        .instagram-preview {
+            width: 95%;
+            max-height: 125px;
+            object-fit: cover;
+            object-position: 50% 0;
+            border-radius: 10px;
+        }
+    }
+}
+.twitter {
+    grid-area: f;
+
+    .social-content {
+        .tweet {
+            color: white;
+            font-family: $bodyFont;
+            font-size: 17px;
+            line-height: 27px;
+        }
+    }
+}
+.github {
+    grid-area: g;
+
+    .social-content {
+        @include center;
+
+        .github-preview {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
