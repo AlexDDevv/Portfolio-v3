@@ -1,0 +1,15 @@
+.footer {
+    @include between;
+    gap: 25px;
+
+    .link-portfolio {
+        color: $grayColor;
+        font-family: $titleFont;
+        transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+        &:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+    }
+}
