@@ -3,6 +3,7 @@
 $titleFont: "Poppins", sans-serif;
 $bodyFont: "Lato", sans-serif;
 $bgColor: rgb(20, 20, 20);
+$grayColor: rgb(179, 179, 179);
 
 @mixin center {
     display: flex;
@@ -33,4 +34,14 @@ $bgColor: rgb(20, 20, 20);
 body {
     background-color: $bgColor;
     padding: 20px 80px;
+}
+.bento-item {
+    border-radius: 30px;
+}
+h2, h3 {
+    font-family: $titleFont;
+    font-weight: 400;
+}
+h2 {
+    color: white;
 }
