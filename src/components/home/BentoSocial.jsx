@@ -6,7 +6,7 @@ export default function BentoSocial({ name, avatar, profil, pseudo, link, icon, 
             <div className="profil-container">
                 <div className="profil">
                     <div className="avatar">
-                        <img src={avatar} alt="Profil picture" />
+                        <img src={avatar} alt={`${title} profil picture`} />
                     </div>
                     <div className="name">
                         <h2 className="title-profil">{profil}</h2>
