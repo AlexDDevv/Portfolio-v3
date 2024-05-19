@@ -3,27 +3,27 @@
         {
             "id": 1,
             "name": "presentation",
-            "title": "Alexis Delporte, web developer",
+            "title": "Alexis Delporte - web developer",
             "subtitle": "Journaling",
             "events": [
                 {
-                    "date": "• 29/04/24: ",
+                    "date": "29/04/24: ",
                     "content": "Graduation: Front-end developer"
                 },
                 {
-                    "date": "• 10/07/20: ",
+                    "date": "10/07/20: ",
                     "content": "Graduation: Pharmacy assistant"
                 },
                 {
-                    "date": "• 10/07/17: ",
+                    "date": "10/07/17: ",
                     "content": "First year of dietician school: mistake"
                 },
                 {
-                    "date": "• 01/12/15: ",
+                    "date": "01/12/15: ",
                     "content": "Few months of STAPS: big mistake"
                 },
                 {
-                    "date": "• 10/07/15: ",
+                    "date": "10/07/15: ",
                     "content": "Graduation: BAC STL"
                 }
             ]
@@ -34,13 +34,13 @@
             "title": "My adventure lasting two years",
             "subtitle": "Some accomplished things 🎉",
             "events": [
-                "• Learning HTML/CSS and JS alongside my work in pharmacy",
-                "• My first portfolio (ugly)",
-                "• A lot of Frontend Mentor challenges",
-                "• Resign to start my new life (I should it before but np)",
-                "• Start front-end training with OpenClassrooms",
-                "• My first big personal project",
-                "• My current portfolio (better)"
+                "Learning HTML/CSS and JS alongside my work in pharmacy",
+                "My first portfolio (ugly)",
+                "A lot of Frontend Mentor challenges",
+                "Resign to start my new life (I should it before but np)",
+                "Start front-end training with OpenClassrooms",
+                "My first big personal project",
+                "My current portfolio (better)"
             ]
         }
     ],
@@ -82,6 +82,17 @@
             "icon": "fa-brands fa-x-twitter",
             "title": "X",
             "tweet": "My first challenge on Spikes, an inspiring platform that I joined to improve my front-end development even further. Let's code!"
+        },
+        {
+            "id": 7,
+            "name": "github",
+            "avatar": "/githubProfil.webp",
+            "profil": "AlexDDevv",
+            "pseudo": "Alexis D",
+            "link": "https://github.com/AlexDDevv",
+            "icon": "fa-brands fa-github",
+            "title": "Github",
+            "cover": "/githubPreview.webp"
         }
     ]
 }
