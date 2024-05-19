@@ -21,8 +21,8 @@ export default function BentoSocial({ name, avatar, profil, pseudo, link, icon, 
                 {cover ? (
                     <img 
                         src={cover} 
-                        alt="Instagram profil preview" 
-                        className='insta-preview'
+                        alt={`${title} profil preview`}
+                        className={`${name}-preview`}
                     />
                 ) : (
                     <p className='tweet'>{tweet}</p>
