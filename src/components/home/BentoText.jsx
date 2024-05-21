@@ -29,18 +29,18 @@ export default function BentoText({ name, title, subtitle, events }) {
                         ))
                     ) : (
                         events.map((event, i) => (
-                            <>
-                                <p className='text-bento' key={`${name}-${i}`}>
+                            <div className='adventure-content' key={`${name}-${i}`}>
+                                <p className='text-bento'>
                                     {event}
                                 </p>
-                                <i class="fa-solid fa-down-long"></i>
-                            </>
+                                <i className="fa-solid fa-down-long"></i>
+                            </div>
                         ))
                     )
                 )}
             </div>
             <Link to={"/about"} title='About me' className='redirection'>
-                <i class="fa-solid fa-square-arrow-up-right"></i>
+                <i className="fa-solid fa-square-arrow-up-right"></i>
             </Link>
         </div>
     );
