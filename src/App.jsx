@@ -6,6 +6,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Footer from "./components/footer/Footer"
+import { AnimatePresence } from "framer-motion"
 
 function App() {
     const location = useLocation().pathname;
@@ -13,12 +14,14 @@ function App() {
     return (
         <>
             <Header />
-            <Routes location={location} key={location} >
-                <Route index element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <AnimatePresence mode="wait">
+                <Routes location={location} key={location} >
+                    <Route index element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </AnimatePresence>
             <Footer />
         </>
     )
