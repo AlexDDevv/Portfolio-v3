@@ -1,0 +1,82 @@
+.main-about {
+    @include center;
+    margin-bottom: 70px;
+    gap: 50px;
+
+    .about-container {
+        width: 50%;
+
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            .hello {
+                color: white;
+                font-family: $titleFont;
+                font-size: 32px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .name {
+                color: white;
+                font-size: 48px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .description {
+                color: $grayColor;
+                font-family: $bodyFont;
+                font-size: 18px;
+                line-height: 30px;
+
+                strong {
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .cv-container {
+            .cv-link {
+                background: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                color: $bgColor;
+                font-family: $bodyFont;
+                padding: 5px 10px;
+                transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+
+                &:hover {
+                    background: transparent;
+                    color: white;
+
+                    i {
+                        color: white;
+                    }
+                }
+
+                i {
+                    color: $bgColor;
+                    margin-right: 10px;
+                    transition: color 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+    .avatar {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            width: 100%;
+            max-height: 410px;
+            object-fit: cover;
+            object-position: 50% 15%;
+            filter: grayscale(0.8);
+        }
+    }
+}
