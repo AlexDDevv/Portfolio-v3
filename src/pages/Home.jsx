@@ -1,8 +1,9 @@
 import React from 'react'
 import gridData from "../data/gridData.json"
 import BentoItem from '../components/home/BentoItem'
+import Transition from '../utils/Transition'
 
-export default function Home() {
+const Home = () => {
     return (
         <main className='grid-container'>
             <>
@@ -31,3 +32,5 @@ export default function Home() {
         </main>
     )
 }
+
+export default Transition(Home)

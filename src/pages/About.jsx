@@ -1,7 +1,8 @@
 import React from 'react'
 import moi from "../assets/img/portrait.webp"
+import Transition from '../utils/Transition'
 
-export default function About() {
+const About = () => {
     return (
         <main className="main-about">
             <div className="about-container">
@@ -25,3 +26,6 @@ export default function About() {
         </main>
     )
 }
+
+export default Transition(About)
+
