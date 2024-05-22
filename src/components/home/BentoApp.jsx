@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 export default function ({ name, title, subtitle, cover }) {
   return (
@@ -10,6 +11,9 @@ export default function ({ name, title, subtitle, cover }) {
         <div className="cover">
             <img src={cover} alt={`Application ${title}`} />
         </div>
+        <Link to={"/projects"} title='My projects' className='redirection'>
+            <i className="fa-solid fa-square-arrow-up-right"></i>
+        </Link>
     </div>
   )
 }
