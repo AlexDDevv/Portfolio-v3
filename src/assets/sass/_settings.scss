@@ -37,6 +37,7 @@ body {
 }
 .bento-item {
     border-radius: 30px;
+    position: relative;
 }
 h2, h3 {
     font-family: $titleFont;
@@ -65,4 +66,10 @@ h2 {
     background: black;
     transform-origin: top;
     z-index: 2500;
+}
+.redirection {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
 }
