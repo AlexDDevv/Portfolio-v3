@@ -1,0 +1,87 @@
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 15px;
+
+    .project-bento {
+        height: 250px;
+        perspective: 2000px;
+        perspective-origin: top;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            .card {
+                transform: rotateY(180deg);
+            }
+            &:nth-child(even) {
+                .card {
+                    transform: rotateY(-180deg);
+               }
+            }
+        }
+
+        .card {
+            position: relative;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.65s cubic-bezier(0.86,0,0.07,1);
+
+            .front-card, .back-card {
+                border-radius: 30px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }
+            .front-card {
+                background: $bgBento;
+                padding: 20px 30px;
+    
+                .title-project {
+                    @include between;
+                    margin-bottom: 20px;
+                }
+                .description-project {
+                    margin-bottom: 20px;
+        
+                    .description {
+                        color: $white;
+                        font-family: $bodyFont;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .stack-project {
+                    @include center;
+                    flex-wrap: wrap;
+                    gap: 8px 15px;
+        
+                    .techno-project {
+                        background: transparent;
+                        border-radius: 5px;
+                        border: 1px solid $white;
+                        color: $white;
+                        font-family: $bodyFont;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding: 4px 10px;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+            .back-card {
+                transform: rotateY(180deg);
+
+                .bento-cover {
+                    border-radius: 30px;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
