@@ -3,7 +3,9 @@
 $titleFont: "Poppins", sans-serif;
 $bodyFont: "Lato", sans-serif;
 $bgColor: rgb(20, 20, 20);
+$bgBento: rgb(29, 29, 29);
 $grayColor: rgb(179, 179, 179);
+$white: rgba(255, 255, 255, 0.95);
 
 @mixin center {
     display: flex;
