@@ -1,9 +1,9 @@
 import React from 'react'
 import TechnoProject from './TechnoProject'
 
-export default function BentoProjects({ title, icon, description, techno, cover }) {
+export default function BentoProjects({ onClick, title, icon, description, techno, cover }) {
     return (
-        <div className='bento-item project-bento'>
+        <div className='bento-item project-bento' onClick={onClick}>
             <div className="card">
                 <div className="front-card">
                     <div className="title-project">
