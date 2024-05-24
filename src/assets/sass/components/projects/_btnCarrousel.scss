@@ -1,0 +1,30 @@
+.btn-carrousel {
+    @include center;
+    gap: 20px;
+
+    .input-container {
+        .input-carrousel {
+            display: none;
+
+            &:checked {
+                +label {
+                    &::before {
+                        background: $white;
+                    }
+                }
+            }
+        }
+        label {
+            &::before {
+                content: "";
+                height: 12px;
+                width: 12px;
+                background: $grayColor;
+                border-radius: 50%;
+                display: block;
+                cursor: pointer;
+                transition: background 0.2s ease-in-out;
+            }
+        }
+    }
+}
