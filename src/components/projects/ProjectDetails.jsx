@@ -1,17 +1,21 @@
 import React from 'react'
+import ProjectCarrousel from './ProjectCarrousel'
 import TechnoProject from "./TechnoProject"
 
-export default function ProjectDetails({ cover, title, presentation, objectif, techno, img, repo, website, onClick }) {
+export default function ProjectDetails({ img, title, presentation, objectif, techno, repo, website, onClick, index, onChange }) {
     return (
         <>
-            <div className="project-cover">
-                <img src={cover} alt={`${title} project cover`} />
-            </div>
             <section className="project-details">
-                <h1 className="project-name">{title}</h1>
+                <h1>{title}</h1>
+                <ProjectCarrousel
+                    img={img}
+                    title={title}
+                    index={index}
+                    onChange={onChange}
+                />
                 <div className="project-text">
                     <p className="project-presentation">{presentation}</p>
-                    <p className="project-objectif">{objectif}</p>
+                    <p className="project-objectif"><span>Objectif:</span> {objectif}</p>
                 </div>
                 <div className="stack-project">
                     {techno.map((tech, i) => (
@@ -21,8 +25,7 @@ export default function ProjectDetails({ cover, title, presentation, objectif, t
                         />
                     ))}
                 </div>
-                <div className="project-carrousel"></div>
-                <div className="project-links">
+                <div className="link-container">
                     <a href={repo} target='_blank' className='project-link'>Github</a>
                     <a href={website} target='_blank' className='project-link'>Site</a>
                 </div>
