@@ -3,6 +3,7 @@ import dataProjects from "../data/dataProjects.json"
 import BentoProjects from '../components/projects/BentoProjects'
 import ProjectDetails from '../components/projects/ProjectDetails'
 import Transition from '../utils/Transition'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
     const [showDetails, setShowDetails] = useState(false)
@@ -27,7 +28,12 @@ const Projects = () => {
     return (
         <main className="main-projects">
             {!selectedProject ? (
-                <>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
                     <h1>My projects</h1>
                     <section className="projects-container">
                         {dataProjects.map(project => (
@@ -42,7 +48,7 @@ const Projects = () => {
                             />
                         ))}
                     </section>
-                </>
+                </motion.div>
             ) : (
                 <ProjectDetails
                     img={selectedProject.images}
