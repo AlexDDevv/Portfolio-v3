@@ -16,7 +16,12 @@
         "repo": "https://github.com/AlexDDevv/space-tourism",
         "website": "https://space-tourism-star.vercel.app/",
         "cover": "/bgBento/bgBentoSpace.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/space/carrouselSpace1.webp",
+            "/carrouselImg/space/carrouselSpace2.webp",
+            "/carrouselImg/space/carrouselSpace3.webp",
+            "/carrouselImg/space/carrouselSpace4.webp"
+        ]
     },
     {
         "id": "library",
@@ -35,7 +40,14 @@
         "repo": "https://github.com/AlexDDevv/My-library",
         "website": "https://my-little-library.vercel.app/",
         "cover": "/bgBento/bgBentoLibrary.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/library/carrouselLibrary1.webp",
+            "/carrouselImg/library/carrouselLibrary2.webp",
+            "/carrouselImg/library/carrouselLibrary3.webp",
+            "/carrouselImg/library/carrouselLibrary4.webp",
+            "/carrouselImg/library/carrouselLibrary5.webp",
+            "/carrouselImg/library/carrouselLibrary6.webp"
+        ]
     },
     {
         "id": "portfolio",
@@ -74,7 +86,12 @@
         ],
         "repo": "https://github.com/AlexDDevv/ArgentBank",
         "cover": "/bgBento/bgBentoBank.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/bank/carrouselBank1.webp",
+            "/carrouselImg/bank/carrouselBank2.webp",
+            "/carrouselImg/bank/carrouselBank3.webp",
+            "/carrouselImg/bank/carrouselBank4.webp"
+        ]
     },
     {
         "id": "debug",
