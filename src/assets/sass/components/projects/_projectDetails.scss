@@ -1,0 +1,110 @@
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+
+    .carrousel {
+        .carrousel-img-container {
+            margin-bottom: 20px;
+            
+            .carrousel-img {
+                border-radius: 8px;
+            }
+            .display {
+                display: block;
+            }
+            .hide {
+                display: none;
+            }
+        }
+    }
+    .project-text {
+        max-width: 800px;
+        margin: 0 auto;
+
+        p {
+            color: $white;
+            font-family: $bodyFont;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 25px;
+            text-align: center;
+
+            &:last-child {
+                margin-bottom: 0;
+                text-align: left;
+
+                span {
+                    color: $grayColor;
+                }
+            }
+        }
+    }
+    .stack-project {
+        @include center;
+        flex-wrap: wrap;
+        gap: 8px 15px;
+
+        .techno-project {
+            background: transparent;
+            border: 1px solid $grayColor;
+            border-radius: 5px;
+            color: $grayColor;
+            font-family: $bodyFont;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 5px 15px;
+        }
+    }
+    .link-container {
+        @include center;
+        gap: 20px;
+
+        .project-link {
+            background: transparent;
+            border: 1px solid $white;
+            border-radius: 5px;
+            color: $white;
+            font-family: $bodyFont;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+
+            &:hover {
+                background: $white;
+                color: black;
+            }
+        }
+    }
+    .arrow-back {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        border: 1px solid $grayColor;
+        border-radius: 50%;
+        @include center;
+        padding: 10px;
+        cursor: pointer;
+        transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+        &:hover {
+            border-color: $white;
+            transform: scale(1.2);
+
+            i {
+                color: $white;
+            }
+        }
+
+        i {
+            color: $grayColor;
+            font-size: 16px;
+            transition: color 0.2s ease-in-out;
+        }
+    }
+}
