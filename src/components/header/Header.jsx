@@ -1,7 +1,7 @@
 import React from 'react'
-import LinkNav from "./LinkNav"
-import SocialLink from "../socialMedia/SocialLink"
 import data from "../../data/data.json"
+import LinkNav from "./LinkNav"
+import DarkMode from '../DarkMode'
 
 export default function Header() {
     return (
@@ -18,16 +18,7 @@ export default function Header() {
                     ))}
                 </ul>
             </nav>
-            <ul className="social-list">
-                {data.socialLink.map(item => (
-                    <SocialLink
-                        key={item.title}
-                        link={item.link}
-                        title={item.title}
-                        icon={item.icon}
-                    />
-                ))}
-            </ul>
+            <DarkMode />
         </header>
     )
 }
