@@ -14,7 +14,8 @@ export default function BentoSocial({ name, avatar, profil, pseudo, link, icon, 
                     </div>
                 </div>
                 <div className="social-link">
-                    <i className={icon}></i>
+                    <span className={icon}></span>
+                    <span className="sr-only">Logo du réseau social {title}</span>
                 </div>
             </div>
             <div className="social-content">

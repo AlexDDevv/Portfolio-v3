@@ -36,7 +36,8 @@ export default function ProjectDetails({ img, title, presentation, objectif, tec
                     <a href={website} target='_blank' className='project-link'>Site</a>
                 </div>
                 <div className="arrow-back" onClick={onClick}>
-                    <i className="fa-solid fa-arrow-left"></i>
+                    <span className="fa-solid fa-arrow-left"></span>
+                    <span className="sr-only">Flèche de retour en arrière</span>
                 </div>
             </section>
         </motion.div>

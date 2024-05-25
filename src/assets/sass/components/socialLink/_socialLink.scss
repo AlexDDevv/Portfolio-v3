@@ -2,7 +2,7 @@
     @include center;
     gap: 25px;
 
-    i {
+    .fa-brands {
         color: $grayColor;
         font-size: 24px;
         transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
