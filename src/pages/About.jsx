@@ -7,10 +7,10 @@ const About = () => {
         <main className="main-about">
             <div className="about-container">
                 <section className="about-me">
-                    <h1 className="hello">Hi there!</h1>
-                    <h2 className='name'>I'm Alexis</h2>
+                    <h1 className="hello">Bonjour!</h1>
+                    <h2 className='name'>Je suis Alexis</h2>
                     <p className="description">
-                        <strong>Web developer</strong> looking for companies. After a year of self-taught training alongside my job (pharmacy assistant), I took a 9-month web integrator course with OpenClassroom. An apprenticeship would give me the opportunity to gain professional experience, discover teamwork, develop my collaborative skills, perfect everything I've learnt and learn new technologies, so that I can grow in this exciting field that I'm passionate about.
+                        <strong>Développeur web</strong> à la recherche d'une entreprise. Je me suis formé en parallèle de mon travail pendant un an, puis j'ai suivi une formation d'intégrateur web de 9 mois avec OpenClassrooms. Je souhaiterai maintenant faire une formation en alternance afin d'acquérir une expérience professionnelle, de découvrir le travail en équipe et de continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime.
                     </p>
                 </section>
                 <div className="cv-container">
