@@ -12,7 +12,7 @@ export default function ({ name, title, subtitle, cover }) {
                 <img src={cover} alt={`Application ${title}`} />
             </div>
             <Link to={"/projects"} className='redirection'>
-                <span className="fa-solid fa-square-arrow-up-right"></span>
+                <span className="fa-solid fa-square-arrow-up-right" aria-hidden="true"></span>
                 <span className="sr-only">Redirection vers la page Projets</span>
             </Link>
         </div>
