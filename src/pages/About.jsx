@@ -14,7 +14,7 @@ const About = () => {
                     </p>
                 </section>
                 <a href="https://delporte-alexis-cv.vercel.app/" target='_blank' className='cv-link'>
-                    <span className="fa-solid fa-file"></span>
+                    <span className="fa-solid fa-file" aria-hidden="true"></span>
                     <span className="sr-only">Redirection vers mon CV en ligne</span>
                     Mon CV
                 </a>
