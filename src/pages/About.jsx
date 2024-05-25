@@ -13,8 +13,9 @@ const About = () => {
                         <strong>Développeur web</strong> à la recherche d'une entreprise. Je me suis formé en parallèle de mon travail pendant un an, puis j'ai suivi une formation d'intégrateur web de 9 mois avec OpenClassrooms. Je souhaiterai maintenant faire une formation en alternance afin d'acquérir une expérience professionnelle, de découvrir le travail en équipe et de continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime.
                     </p>
                 </section>
-                <a href="https://delporte-alexis-cv.vercel.app/" target='_blank' title='Mon CV' className='cv-link'>
-                    <i className="fa-solid fa-file"></i>
+                <a href="https://delporte-alexis-cv.vercel.app/" target='_blank' className='cv-link'>
+                    <span className="fa-solid fa-file"></span>
+                    <span className="sr-only">Redirection vers mon CV en ligne</span>
                     Mon CV
                 </a>
             </div>

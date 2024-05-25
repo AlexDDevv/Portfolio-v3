@@ -33,14 +33,16 @@ export default function BentoText({ name, title, subtitle, events }) {
                                 <p className='text-bento'>
                                     {event}
                                 </p>
-                                <i className="fa-solid fa-down-long"></i>
+                                <span className="fa-solid fa-down-long"></span>
+                                <span className="sr-only">Flèche de direction pour signaler un ordre d'évènements</span>
                             </div>
                         ))
                     )
                 )}
             </div>
-            <Link to={"/about"} title='About me' className='redirection'>
-                <i className="fa-solid fa-square-arrow-up-right"></i>
+            <Link to={"/about"} className='redirection'>
+                <span className="fa-solid fa-square-arrow-up-right"></span>
+                <span className="sr-only">Redirection vers la page À propos</span>
             </Link>
         </div>
     );

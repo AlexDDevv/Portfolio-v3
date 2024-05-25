@@ -96,12 +96,12 @@
             border-color: $white;
             transform: scale(1.2);
 
-            i {
+            .fa-solid {
                 color: $white;
             }
         }
 
-        i {
+        .fa-solid {
             color: $grayColor;
             font-size: 16px;
             transition: color 0.2s ease-in-out;

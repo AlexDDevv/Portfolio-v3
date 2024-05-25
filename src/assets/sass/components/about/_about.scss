@@ -53,12 +53,12 @@
                 background: transparent;
                 color: $white;
 
-                i {
+                .fa-solid {
                     color: $white;
                 }
             }
 
-            i {
+            .fa-solid {
                 color: $bgColor;
                 margin-right: 10px;
                 transition: color 0.2s ease-in-out;
