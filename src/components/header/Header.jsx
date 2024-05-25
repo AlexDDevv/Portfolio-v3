@@ -6,7 +6,7 @@ import data from "../../data/data.json"
 export default function Header() {
     return (
         <header className='header'>
-            <div className='logo'></div>
+            <div className='logo'>AD</div>
             <nav className='nav-bar'>
                 <ul className="nav-list">
                     {data.navlink.map(item => (

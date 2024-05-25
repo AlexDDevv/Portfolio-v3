@@ -2,33 +2,13 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
+    color: $white;
+    font-family: $bodyFont;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
     @include center;
-    position: relative;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-
-    &:before {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-image: conic-gradient(white 20deg, transparent 120deg);
-        position: absolute;
-        animation: rotate 2s linear infinite;
-    }
-    &:after {
-        content: "AD";
-        background: rgb(35, 35, 35);
-        border-radius: 50%;
-        color: white;
-        font-family: $bodyFont;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        width: 57px;
-        height: 57px;
-        @include center;
-        text-align: center;
-        z-index: 1000;
-        box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5);
-    }
+    background: #232323;
+    box-shadow: inset 5px 5px 15px #0e0e0e,
+                inset -5px -5px 15px #383838;
 }
