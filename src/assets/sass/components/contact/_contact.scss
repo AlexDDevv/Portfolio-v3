@@ -1,0 +1,75 @@
+.main-contact {
+    @include center;
+    gap: 50px;
+    margin-bottom: 70px;
+
+    .contact-me {
+        width: 50%;
+
+        h1 {
+            color: $white;
+            font-family: $titleFont;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+            color: $grayColor;
+            font-family: $bodyFont;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 25px;
+
+            strong {
+                color: $white;
+                font-size: 24px;
+            }
+        }
+        .btn-copy {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 10px;
+            background: $white;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: rgb(20, 20, 20);
+            font-family: "Lato", sans-serif;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+
+            &:hover {
+                background: transparent;
+                color: $white;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+        .copy-msg {
+            color: $white;
+            font-family: $bodyFont;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+
+            &.msg-appear {
+                opacity: 1;
+            }
+        }
+    }
+    .contact-img {
+        width: 50%;
+        display: flex;
+
+        img {
+            width: 100%;
+            max-height: 410px;
+            object-fit: cover;
+        }
+    }
+}
