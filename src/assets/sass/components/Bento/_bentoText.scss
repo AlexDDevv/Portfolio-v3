@@ -9,7 +9,7 @@
         font-size: 16px;
     }
     .text-bento {
-        color: white;
+        color: $white;
         font-family: $bodyFont;
     }
 }
@@ -20,22 +20,20 @@
         margin-bottom: 30px;
 
         .title {
-            color: white;
+            color: $white;
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
             font-family: $titleFont;
             font-size: 32px;
             font-weight: 400;
             margin-bottom: 30px;
             padding-bottom: 30px;
-            opacity: 0.95;
     
             .bolder {
                 font-weight: 500;
-                opacity: 1;
             }
         }
         .subtitle {
-            color: white;
+            color: $white;
         }
     }
     .text-bento {
@@ -95,7 +93,7 @@
             margin-bottom: 0;
         }
         i {
-            color: white;
+            color: $white;
         }
     }
 }

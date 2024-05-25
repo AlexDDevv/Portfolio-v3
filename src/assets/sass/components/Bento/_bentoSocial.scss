@@ -1,5 +1,5 @@
 .instagram, .twitter, .github {
-    background-color: rgb(29, 29, 29);
+    background-color: $bgBento;
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
                 }
             }
             .name {
-                color: white;
+                color: $white;
 
                 .title-profil {
                     font-size: 16px;
@@ -36,11 +36,9 @@
                 }
             }
         }
-        .social-link {
-            i {
-                color: white;
-                font-size: 24px;
-            }
+        i {
+            color: $white;
+            font-size: 24px;
         }
     }
     .redirect-social {
@@ -52,7 +50,7 @@
         transition: background 0.2s ease-in-out;
 
         a {
-            color: white;
+            color: $white;
             font-family: $bodyFont;
             letter-spacing: 1px;
             width: 100%;
@@ -62,10 +60,10 @@
         }
 
         &:hover {
-            background:white;
+            background:$white;
 
             a {
-                color: rgb(29, 29, 29);
+                color: $black;
             }
         }
     }
@@ -90,7 +88,7 @@
 
     .social-content {
         .tweet {
-            color: white;
+            color: $white;
             font-family: $bodyFont;
             font-size: 17px;
             line-height: 27px;

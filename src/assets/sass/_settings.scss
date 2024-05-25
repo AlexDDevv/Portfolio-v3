@@ -6,6 +6,7 @@ $bgColor: rgb(20, 20, 20);
 $bgBento: rgb(29, 29, 29);
 $grayColor: rgb(179, 179, 179);
 $white: rgba(255, 255, 255, 0.95);
+$black: rgba(0, 0, 0, 0.95);
 
 @mixin center {
     display: flex;
@@ -46,7 +47,7 @@ h2, h3 {
     font-weight: 400;
 }
 h2 {
-    color: white;
+    color: $white;
 }
 
 .slide-in {
@@ -73,5 +74,5 @@ h2 {
     position: absolute;
     top: 30px;
     right: 30px;
-    color: white;
+    color: $white;
 }

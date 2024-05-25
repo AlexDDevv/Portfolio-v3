@@ -12,7 +12,7 @@
             margin-bottom: 30px;
 
             .hello {
-                color: white;
+                color: $white;
                 font-family: $titleFont;
                 font-size: 32px;
                 font-weight: 600;
@@ -20,7 +20,7 @@
                 text-transform: uppercase;
             }
             .name {
-                color: white;
+                color: $white;
                 font-size: 48px;
                 font-weight: 600;
                 letter-spacing: 1px;
@@ -34,15 +34,15 @@
                 line-height: 30px;
 
                 strong {
-                    color: white;
-                    font-size: 1.5rem;
+                    color: $white;
+                    font-size: 24px;
                 }
             }
         }
         .cv-container {
             .cv-link {
-                background: white;
-                border: 1px solid white;
+                background: $white;
+                border: 1px solid $white;
                 border-radius: 5px;
                 color: $bgColor;
                 font-family: $bodyFont;
@@ -51,10 +51,10 @@
 
                 &:hover {
                     background: transparent;
-                    color: white;
+                    color: $white;
 
                     i {
-                        color: white;
+                        color: $white;
                     }
                 }
 
