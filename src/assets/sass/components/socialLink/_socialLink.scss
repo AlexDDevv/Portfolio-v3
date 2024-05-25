@@ -3,12 +3,12 @@
     gap: 25px;
 
     i {
-        color: rgb(179, 179, 179);
+        color: $grayColor;
         font-size: 24px;
         transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 
         &:hover {
-            color: white;
+            color: $white;
             transform: scale(1.2);
         }
     }

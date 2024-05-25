@@ -16,11 +16,11 @@
                 transition: 0.5s 0.1s ease-in-out;
             }
             .nav-link {
-                color: rgb(179, 179, 179);
+                color: $grayColor
             }
             .active-nav-link {
                 background: rgb(35, 35, 35);
-                color: white;
+                color: $white;
             }
         }
     }
