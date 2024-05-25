@@ -3,48 +3,48 @@
         {
             "id": 1,
             "name": "presentation",
-            "title": "web developer",
-            "subtitle": "Journaling",
+            "title": "développeur web",
+            "subtitle": "Journal",
             "events": [
                 {
                     "date": "29/04/24: ",
-                    "content": "Create my own business"
+                    "content": "Création de mon entreprise"
                 },
                 {
                     "date": "29/04/24: ",
-                    "content": "Graduation: Front-end developer"
+                    "content": "Diplôme: intégrateur web"
                 },
                 {
                     "date": "10/07/20: ",
-                    "content": "Graduation: Pharmacy assistant"
+                    "content": "Diplôme: préparateur en pharmacie"
                 },
                 {
                     "date": "10/07/17: ",
-                    "content": "First year of dietician school: mistake"
+                    "content": "Première année d'école de diététique"
                 },
                 {
                     "date": "01/12/15: ",
-                    "content": "Few months of STAPS: big mistake"
+                    "content": "Quelques mois de STAPS"
                 },
                 {
                     "date": "10/07/15: ",
-                    "content": "Graduation: BAC STL"
+                    "content": "Diplôme: BAC STL"
                 }
             ]
         },
         {
             "id": "2",
             "name": "adventure",
-            "title": "My adventure lasting two years",
-            "subtitle": "Some accomplished things 🎉",
+            "title": "Mon aventure depuis deux ans",
+            "subtitle": "Quelques accomplissements 🎉",
             "events": [
-                "Learning HTML/CSS and JS alongside my work in pharmacy",
-                "My first portfolio (ugly)",
-                "A lot of Frontend Mentor challenges",
-                "Resign to start my new life (I should it before but np)",
-                "Start front-end training with OpenClassrooms",
-                "My first big personal project",
-                "My current portfolio (better)"
+                "Apprendre HTML/CSS et JS en parallèle de mon travail",
+                "Mon premier portfolio",
+                "Beaucoup de challenges Frontend Mentor",
+                "Démission pour faire ce que j'aime",
+                "Formation d'intégrateur web avec OpenClassrooms",
+                "Mon premier gros projet personnel",
+                "Mon portfolio actuel"
             ]
         }
     ],
@@ -53,14 +53,14 @@
             "id": "3",
             "name": "library",
             "title": "My little Library",
-            "subtitle": "Personal project 📖",
+            "subtitle": "Projet personnel 📖",
             "cover": "/MyLittleLibrary.webp"
         },
         {
             "id": "4",
             "name": "space",
             "title": "Space Tourism",
-            "subtitle": "Frontend Mentor challenge 🚀",
+            "subtitle": "Challenge Frontend Mentor 🚀",
             "cover": "/SpaceTourism.webp"
         }
     ],
@@ -80,12 +80,12 @@
             "id": 6,
             "name": "twitter",
             "avatar": "/avatar.webp",
-            "profil": "SportingDevWeb",
+            "profil": "Le D codeur",
             "pseudo": "@Sport_DevWeb",
             "link": "https://twitter.com/Sport_DevWeb",
             "icon": "fa-brands fa-x-twitter",
             "title": "X",
-            "tweet": "My first challenge on Spikes, an inspiring platform that I joined to improve my front-end development even further. Let's code!"
+            "tweet": "J'ai rejoins Spikes, une plateforme inspirante qui propose des challenges front-end afin de continuer à s'améliorer."
         },
         {
             "id": 7,

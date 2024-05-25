@@ -2,15 +2,15 @@
     "navlink": [
         {
             "page": "/",
-            "content": "Home"
+            "content": "Accueil"
         },
         {
             "page": "/about",
-            "content": "About"
+            "content": "À propos"
         },
         {
             "page": "/projects",
-            "content": "Projects"
+            "content": "Projets"
         },
         {
             "page": "/contact",

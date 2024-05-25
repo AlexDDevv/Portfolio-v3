@@ -29,7 +29,7 @@ export default function BentoSocial({ name, avatar, profil, pseudo, link, icon, 
                 )}
             </div>
             <button className="redirect-social">
-                <a href={link} target='blank' title={title} className="social-link">Visit my {title}</a>
+                <a href={link} target='blank' title={title} className="social-link">Voir mon {title}</a>
             </button>
         </div>
     )
