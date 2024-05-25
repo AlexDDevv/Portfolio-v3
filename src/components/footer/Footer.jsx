@@ -15,10 +15,6 @@ export default function Footer() {
                     />
                 ))}
             </ul>
-            <a href="https://alexis-delporte.com/" target='_blank' title='Mon portfolio' className='link-portfolio'>
-                Alexis Delporte
-            </a>
-            <div className='logo'></div>
         </footer>
     )
 }
