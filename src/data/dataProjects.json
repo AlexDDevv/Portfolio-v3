@@ -17,10 +17,10 @@
         "website": "https://space-tourism-star.vercel.app/",
         "cover": "/bgBento/bgBentoSpace.webp",
         "images": [
-            "/carrouselImg/space/carrouselSpace1.webp",
-            "/carrouselImg/space/carrouselSpace2.webp",
-            "/carrouselImg/space/carrouselSpace3.webp",
-            "/carrouselImg/space/carrouselSpace4.webp"
+            "/carrouselImg/space/space1.webp",
+            "/carrouselImg/space/space2.webp",
+            "/carrouselImg/space/space3.webp",
+            "/carrouselImg/space/space4.webp"
         ]
     },
     {
@@ -41,17 +41,17 @@
         "website": "https://my-little-library.vercel.app/",
         "cover": "/bgBento/bgBentoLibrary.webp",
         "images": [
-            "/carrouselImg/library/carrouselLibrary1.webp",
-            "/carrouselImg/library/carrouselLibrary2.webp",
-            "/carrouselImg/library/carrouselLibrary3.webp",
-            "/carrouselImg/library/carrouselLibrary4.webp",
-            "/carrouselImg/library/carrouselLibrary5.webp",
-            "/carrouselImg/library/carrouselLibrary6.webp"
+            "/carrouselImg/library/library1.webp",
+            "/carrouselImg/library/library2.webp",
+            "/carrouselImg/library/library3.webp",
+            "/carrouselImg/library/library4.webp",
+            "/carrouselImg/library/library5.webp",
+            "/carrouselImg/library/library6.webp"
         ]
     },
     {
         "id": "portfolio",
-        "title": "Mon portfolio",
+        "title": "Ancien portfolio",
         "icon": "/icons/resume.png",
         "presentation": "Projet formation OpenClassrooms: conception de mon portfolio.",
         "description": "Conception de mon portfolio pour mettre en avant mon travail.",
@@ -66,7 +66,11 @@
         "repo": "https://github.com/AlexDDevv/Portfolio-v2",
         "website": "https://alexis-delporte.com/",
         "cover": "/bgBento/bgBentoPortfolio.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/portfolio/portfolio1.webp",
+            "/carrouselImg/portfolio/portfolio2.webp",
+            "/carrouselImg/portfolio/portfolio3.webp"
+        ]
     },
     {
         "id": "bank",
@@ -87,10 +91,10 @@
         "repo": "https://github.com/AlexDDevv/ArgentBank",
         "cover": "/bgBento/bgBentoBank.webp",
         "images": [
-            "/carrouselImg/bank/carrouselBank1.webp",
-            "/carrouselImg/bank/carrouselBank2.webp",
-            "/carrouselImg/bank/carrouselBank3.webp",
-            "/carrouselImg/bank/carrouselBank4.webp"
+            "/carrouselImg/bank/bank1.webp",
+            "/carrouselImg/bank/bank2.webp",
+            "/carrouselImg/bank/bank3.webp",
+            "/carrouselImg/bank/bank4.webp"
         ]
     },
     {
@@ -108,7 +112,9 @@
         ],
         "repo": "https://github.com/AlexDDevv/P10-debugguer-724Events",
         "cover": "/bgBento/bgBentoBug.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/bug/bug1.webp"
+        ]
     },
     {
         "id": "nina",
@@ -127,7 +133,9 @@
         "repo": "https://github.com/AlexDDevv/P9-Optimisation-Nina-Carducci",
         "website": "https://alexddevv.github.io/P9-Optimisation-Nina-Carducci/",
         "cover": "/bgBento/bgBentoNina.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/nina/nina1.webp"
+        ]
     },
     {
         "id": "kasa",
@@ -145,7 +153,11 @@
         "repo": "https://github.com/AlexDDevv/P8-Kasa",
         "website": "https://p8-kasa-sigma.vercel.app/",
         "cover": "/bgBento/bgBentoKasa.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/kasa/kasa1.webp",
+            "/carrouselImg/kasa/kasa2.webp",
+            "/carrouselImg/kasa/kasa3.webp"
+        ]
     },
     {
         "id": "bluel",
@@ -164,7 +176,14 @@
         ],
         "repo": "https://github.com/AlexDDevv/P6-Portefolio-Sophie-Bluel",
         "cover": "/bgBento/bgBentoBluel.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/bluel/bluel1.webp",
+            "/carrouselImg/bluel/bluel2.webp",
+            "/carrouselImg/bluel/bluel3.webp",
+            "/carrouselImg/bluel/bluel4.webp",
+            "/carrouselImg/bluel/bluel5.webp",
+            "/carrouselImg/bluel/bluel6.webp"
+        ]
     },
     {
         "id": "food",
@@ -182,6 +201,10 @@
         "repo": "https://github.com/AlexDDevv/P4-OhMyFood",
         "website": "https://p4-oh-my-food.vercel.app/",
         "cover": "/bgBento/bgBentoFood.webp",
-        "images": []
+        "images": [
+            "/carrouselImg/food/food1.webp",
+            "/carrouselImg/food/food2.webp",
+            "/carrouselImg/food/food3.webp"
+        ]
     }
 ]
