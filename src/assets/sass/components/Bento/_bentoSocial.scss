@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+        padding: 20px 30px;
+    }
+
     .profil-container {
         @include between;
 
@@ -16,6 +20,11 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
+
+                @media screen and (max-width: 1024px) {
+                    width: 50px;
+                    height: 50px;
+                }
 
                 img {
                     width: 100%;
@@ -39,6 +48,13 @@
         .fa-brands {
             color: $white;
             font-size: 24px;
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
         }
     }
     .redirect-social {
@@ -48,6 +64,14 @@
         border-radius: 100px;
         outline: none;
         transition: background 0.2s ease-in-out;
+
+        @media screen and (max-width: 640px) {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
 
         a {
             color: $white;
@@ -75,10 +99,10 @@
         @include center;
 
         .instagram-preview {
-            width: 95%;
-            max-height: 110px;
+            width: 100%;
+            max-height: 120px;
             object-fit: cover;
-            object-position: 50% 0;
+            object-position: 50% 10%;
             border-radius: 10px;
         }
     }
@@ -90,8 +114,13 @@
         .tweet {
             color: $white;
             font-family: $bodyFont;
-            font-size: 17px;
-            line-height: 27px;
+            font-size: 16px;
+            line-height: 25px;
+
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
         }
     }
 }
@@ -102,9 +131,16 @@
         @include center;
 
         .github-preview {
+            border-radius: 15px;
             width: 100%;
+            min-height: 350px;
             object-fit: cover;
-            border-radius: 10px;
+            object-position: 0;
+
+            @media screen and (max-width: 640px) {
+                max-height: 400px;
+                object-position: center 0;
+            }
         }
     }
 }
