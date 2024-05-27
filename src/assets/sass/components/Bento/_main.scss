@@ -8,5 +8,43 @@
     "d c c g"
    "d c c f";
     gap: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas: 
+        "b b b"
+        "a a e"
+        "g d d"
+        "g d d"
+        "f c c";
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas: 
+        "b b"
+        "a g"
+        "d g"
+        "d e"
+        "f c";
+    }
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 300px);
+        grid-template-areas: 
+        "a"
+        "b"
+        "g"
+        "g"
+        "e"
+        "d"
+        "d"
+        "c"
+        "f";
+    }
+    @media screen and (max-width: 425px) {
+        margin-bottom: 65px;
+    }
 }
