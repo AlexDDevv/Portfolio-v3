@@ -2,4 +2,16 @@
     @include between;
     gap: 25px;
     margin-bottom: 80px;
+
+    @media screen and (max-width: 1024px) {
+        gap: 20px;
+    }
+    @media screen and (max-width: 640px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 425px) {
+        gap: 15px 0;
+        margin-bottom: 65px;
+    }
 }

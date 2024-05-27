@@ -11,4 +11,8 @@
     background: #232323;
     box-shadow: inset 5px 5px 15px #0e0e0e,
                 inset -5px -5px 15px #383838;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
