@@ -5,10 +5,21 @@
 
     .title {
         font-size: 24px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 425px) {
+            margin-bottom: 5px;
+        }
     }
     .subtitle {
         color: $grayColor;
         font-size: 16px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }
 .library {
@@ -20,13 +31,30 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+        padding: 20px 0 0 30px;
+    }
+    @media screen and (max-width: 425px) {
+        padding: 20px 30px;
+    }
+
     .cover {
         display: flex;
         justify-content: flex-end;
 
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+
         img {
             max-height: 200px;
-            border-radius: 10px;
+            border-radius: 15px;
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+                object-fit: cover;
+                object-position: center 0;
+            }
         }
     }
 }
@@ -39,6 +67,10 @@
     overflow: hidden;
     grid-area: d;
 
+    @media screen and (max-width: 768px) {
+        padding: 20px 0 0 30px;
+    }
+
     .cover {
         height: 75%;
         display: flex;
@@ -46,7 +78,7 @@
 
         img {
             height: 100%;
-            border-top-left-radius: 10px;
+            border-top-left-radius: 20px;
         }
     }
 }
