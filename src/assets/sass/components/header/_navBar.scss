@@ -1,19 +1,52 @@
 .nav-bar {
     border: 1px solid rgb(35, 35, 35);
     border-radius: 80px;
+
+    @media screen and (max-width: 425px) {
+        order: 2;
+    }
     
     .nav-list {
         @include center;
         padding: 6px;
 
+        @media screen and (max-width: 1024px) {
+            padding: 4px;
+        }
+        @media screen and (max-width: 640px) {
+            padding: 2px 4px;
+        }
+
         .nav-li {
             padding: 12px 0;
+
+            @media screen and (max-width: 1280px) {
+                padding: 10px 0;
+            }
+            @media screen and (max-width: 1024px) {
+                padding: 8px 0;
+            }
+            @media screen and (max-width: 640px) {
+                padding: 5px 0;
+            }
 
             a {
                 border-radius: 80px;
                 font-family: $bodyFont;
                 padding: 12px 55px;
-                transition: 0.5s 0.1s ease-in-out;
+                transition: color 0.5s 0.1s ease-in-out, background 0.5s 0.1s ease-in-out;
+
+                @media screen and (max-width: 1280px) {
+                    padding: 10px 40px;
+                }
+                @media screen and (max-width: 1024px) {
+                    font-size: 14px;
+                    padding: 8px 30px;
+                }
+                @media screen and (max-width: 640px) {
+                    font-size: 12px;
+                    padding: 5px 20px;
+                }
             }
             .nav-link {
                 color: $grayColor
