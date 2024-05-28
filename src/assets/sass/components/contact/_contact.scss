@@ -1,10 +1,18 @@
 .main-contact {
     @include center;
     gap: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 
     .contact-me {
         width: 50%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
         h1 {
             color: $white;
@@ -14,6 +22,13 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             margin-bottom: 20px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: 425px) {
+                font-size: 36px;
+            }
         }
         p {
             color: $grayColor;
@@ -22,49 +37,85 @@
             line-height: 30px;
             margin-bottom: 25px;
 
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            @media screen and (max-width: 425px) {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
             strong {
                 color: $white;
                 font-size: 24px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 22px;
+                }
+                @media screen and (max-width: 425px) {
+                    font-size: 20px;
+                }
             }
         }
-        .btn-copy {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            gap: 10px;
-            background: $white;
-            border: 1px solid $white;
-            border-radius: 5px;
-            color: $black;
-            font-family: "Lato", sans-serif;
-            margin-bottom: 10px;
-            padding: 5px 10px;
-            cursor: pointer;
-            transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+        .email-container {
+            @media screen and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+            
+            .btn-copy {
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+                gap: 10px;
+                background: $white;
+                border: 1px solid $white;
+                border-radius: 5px;
+                color: $black;
+                font-family: "Lato", sans-serif;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
-            &:hover {
-                background: transparent;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 0;
+                }
+    
+                &:hover {
+                    background: transparent;
+                    color: $white;
+                }
+    
+                .fa-regular {
+                    font-size: 16px;
+                }
+            }
+            .copy-msg {
                 color: $white;
-            }
-
-            .fa-regular {
-                font-size: 16px;
-            }
-        }
-        .copy-msg {
-            color: $white;
-            font-family: $bodyFont;
-            opacity: 0;
-            transition: opacity 0.2s ease-in-out;
-
-            &.msg-appear {
-                opacity: 1;
+                font-family: $bodyFont;
+                font-size: 12px;
+                opacity: 0;
+                padding-left: 5px;
+                transition: opacity 0.2s ease-in-out;
+    
+                &.msg-appear {
+                    opacity: 1;
+                }
             }
         }
     }
     .contact-img {
         width: 50%;
+        min-width: 350px;
         display: flex;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
         img {
             width: 100%;
