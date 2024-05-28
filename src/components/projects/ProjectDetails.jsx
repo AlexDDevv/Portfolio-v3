@@ -3,7 +3,7 @@ import ProjectCarrousel from './ProjectCarrousel'
 import TechnoProject from "./TechnoProject"
 import { motion } from 'framer-motion'
 
-export default function ProjectDetails({ img, title, presentation, objectif, techno, repo, website, onClick, index, onChange }) {
+export default function ProjectDetails({ img, title, presentation, objectif, techno, repo, website, onClick }) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -16,8 +16,6 @@ export default function ProjectDetails({ img, title, presentation, objectif, tec
                 <ProjectCarrousel
                     img={img}
                     title={title}
-                    index={index}
-                    onChange={onChange}
                 />
                 <div className="project-text">
                     <p className="project-presentation">{presentation}</p>
