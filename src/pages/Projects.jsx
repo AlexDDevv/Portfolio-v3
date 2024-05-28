@@ -8,7 +8,6 @@ import { motion } from 'framer-motion'
 const Projects = () => {
     const [showDetails, setShowDetails] = useState(false)
     const [selectedProject, setSelectedProject] = useState(null)
-    const [sliderIndex, setSliderIndex] = useState(0)
 
     const renderDetails = (project) => {
         setSelectedProject(project)
@@ -19,10 +18,6 @@ const Projects = () => {
     const goBack = () => {
         setShowDetails(false)
         setSelectedProject(null)
-    }
-
-    const handleRadio = (radioIdx) => {
-        setSliderIndex(radioIdx)
     }
 
     return (
@@ -53,15 +48,12 @@ const Projects = () => {
                 <ProjectDetails
                     img={selectedProject.images}
                     title={selectedProject.title}
-                    index={sliderIndex}
                     presentation={selectedProject.presentation}
                     objectif={selectedProject.objectif}
                     techno={selectedProject.techno}
                     repo={selectedProject.repo}
                     website={selectedProject.website}
                     onClick={goBack}
-                    radioIdx={sliderIndex}
-                    onChange={handleRadio}
                 />
             )}
         </main>
