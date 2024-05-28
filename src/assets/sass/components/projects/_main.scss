@@ -1,7 +1,6 @@
 .main-projects {
-    margin-bottom: 100px;
-    padding: 0 100px;
-
+    margin-bottom: 80px;
+    
     h1 {
         color: $white;
         font-family: $titleFont;
@@ -11,5 +10,9 @@
         text-transform: uppercase;
         margin-bottom: 25px;
         text-align: center;
+
+        @media screen and (max-width: 425px) {
+            font-size: 24px;
+        }
     }
 }
