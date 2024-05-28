@@ -1,31 +1,18 @@
 import React from 'react'
 import CarrouselImg from "./CarrouselImg"
-import CarrouselInput from './CarrouselInput'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-export default function ProjectCarrousel({ img, title, index, onChange }) {
+export default function ProjectCarrousel({ img, title }) {
     return (
-        <div className='carrousel'>
+        <Carousel className="carrousel" showThumbs={false} showStatus={false} useKeyboardArrows={true}>
             {img.map((img, idx) => (
-                index === idx && (
-                    <CarrouselImg
-                        key={idx}
-                        img={img}
-                        title={title}
-                        index={index}
-                        display={index === idx ? "display" : "hide"}
-                    />
-                )
+                <CarrouselImg
+                    key={idx}
+                    img={img}
+                    title={title}
+                />
             ))}
-            <div className="btn-carrousel">
-                {img.map((_, idx) => (
-                    <CarrouselInput
-                        key={idx}
-                        btn={`radio-${idx}`}
-                        checked={index === idx}
-                        onChange={() => onChange(idx)}
-                    />
-                ))}
-            </div>
-        </div>
+        </Carousel>
     )
 }
