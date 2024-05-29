@@ -10,7 +10,7 @@ export default function DarkMode() {
         localStorage.setItem("selectedTheme", "light")
     }
 
-    const selectedTheme = localStorage.getItem("selectedTheme")
+    const selectedTheme = localStorage.getItem("selectedTheme") || "dark";
 
     if (selectedTheme === "dark") {
         setDarkMode();
