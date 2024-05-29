@@ -31,6 +31,7 @@
         perspective-origin: top;
         position: relative;
         cursor: pointer;
+        box-shadow: none;
 
         &:hover {
             .card {
@@ -45,7 +46,7 @@
 
         .card {
             border-radius: 30px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
             position: relative;
             height: 100%;
             transform-style: preserve-3d;
@@ -63,18 +64,25 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                background: $bgBento;
+                background: var(--bentoBg);
                 padding: 20px 30px 25px 30px;
+                transition: background 0.2s ease-in-out;
     
                 .title-project {
                     @include between;
+
+                    .title {
+                        color: var(--titleColor);
+                        transition: color 0.2s ease-in-out;
+                    }
                 }
                 .description-project {
                     .description {
-                        color: $white;
+                        color: var(--textColor);
                         font-family: $bodyFont;
                         font-size: 16px;
                         line-height: 23px;
+                        transition: color 0.2s ease-in-out;
                     }
                 }
                 .stack-project {
@@ -85,13 +93,13 @@
                     .techno-project {
                         background: transparent;
                         border-radius: 5px;
-                        border: 1px solid $white;
-                        color: $white;
+                        border: 1px solid var(--textColor);
+                        color: var(--textColor);
                         font-family: $bodyFont;
                         font-size: 12px;
                         font-weight: 600;
                         padding: 4px 10px;
-                        transition: 0.2s ease-in-out;
+                        transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
                     }
                 }
             }

@@ -1,5 +1,5 @@
 .instagram, .twitter, .github {
-    background-color: $bgBento;
+    background-color: var(--bentoBg);
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
@@ -34,20 +34,22 @@
                 }
             }
             .name {
-                color: $white;
-
                 .title-profil {
+                    color: var(--titleColor);
                     font-size: 16px;
+                    transition: color 0.2s ease-in-out;
                 }
                 .title-pseudo {
-                    color: rgba(255, 255, 255, 0.6);
+                    color: var(--textColor);
                     font-size: 12px;
+                    transition: color 0.2s ease-in-out;
                 }
             }
         }
         .fa-brands {
-            color: $white;
+            color: var(--titleColor);
             font-size: 24px;
+            transition: color 0.2s ease-in-out;
 
             @media screen and (max-width: 1024px) {
                 display: none;
@@ -58,8 +60,8 @@
         }
     }
     .redirect-social {
-        background: transparent;
-        border: 1px solid $grayColor;
+        background: var(--btnBg);
+        border: none;
         width: 100%;
         border-radius: 100px;
         outline: none;
@@ -80,15 +82,10 @@
             width: 100%;
             display: block;
             padding: 10px 0;
-            transition: color 0.2s ease-in-out;
         }
 
         &:hover {
-            background:$white;
-
-            a {
-                color: $black;
-            }
+            background: var(--btnBgHover);
         }
     }
 }
@@ -100,7 +97,7 @@
 
         .instagram-preview {
             width: 100%;
-            max-height: 120px;
+            max-height: 100px;
             object-fit: cover;
             object-position: 50% 10%;
             border-radius: 10px;
@@ -112,10 +109,11 @@
 
     .social-content {
         .tweet {
-            color: $white;
+            color: var(--textColor);
             font-family: $bodyFont;
             font-size: 16px;
             line-height: 25px;
+            transition: color 0.2s ease-in-out;
 
             @media screen and (max-width: 640px) {
                 font-size: 18px;

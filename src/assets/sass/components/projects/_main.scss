@@ -6,7 +6,7 @@
     }
     
     h1 {
-        color: $white;
+        color: var(--titleColor);
         font-family: $titleFont;
         font-size: 32px;
         font-weight: 600;
@@ -14,6 +14,7 @@
         text-transform: uppercase;
         margin-bottom: 30px;
         text-align: center;
+        transition: color 0.2s ease-in-out;
 
         @media screen and (max-width: 1024px) {
             font-size: 28px;

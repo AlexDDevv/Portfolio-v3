@@ -1,5 +1,5 @@
 .presentation, .adventure {
-    background-image: url("/bgBento/bgBento.webp");
+    background-image: url("/bgBento/bgBento.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,14 +10,7 @@
     @media screen and (max-width: 1440px) {
         padding: 20px 30px;
     }
-
-    .subtitle {
-        font-size: 16px;
-
-        @media screen and (max-width: 768px) {
-            font-size: 14px;
-        }
-    }
+    
     .text-bento {
         color: $white;
         font-family: $bodyFont;
@@ -120,6 +113,7 @@
         }
 
         .title {
+            color: $white;
             font-size: 24px;
             margin-bottom: 5px;
 

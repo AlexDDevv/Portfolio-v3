@@ -20,34 +20,37 @@
             margin-bottom: 30px;
 
             .hello {
-                color: $white;
+                color: var(--titleColor);
                 font-family: $titleFont;
                 font-size: 32px;
                 font-weight: 600;
                 letter-spacing: 1px;
                 text-transform: uppercase;
+                transition: color 0.2s ease-in-out;
 
                 @media screen and (max-width: 1024px) {
                     font-size: 28px;
                 }
             }
             .name {
-                color: $white;
+                color: var(--titleColor);
                 font-size: 48px;
                 font-weight: 600;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                transition: color 0.2s ease-in-out;
 
                 @media screen and (max-width: 1024px) {
                     font-size: 40px;
                 }
             }
             .description {
-                color: $grayColor;
+                color: var(--textColor);
                 font-family: $bodyFont;
                 font-size: 18px;
                 line-height: 30px;
+                transition: color 0.2s ease-in-out;
 
                 @media screen and (max-width: 1024px) {
                     font-size: 16px;
@@ -55,8 +58,9 @@
                 }
 
                 strong {
-                    color: $white;
+                    color: var(--titleColor);
                     font-size: 24px;
+                    transition: color 0.2s ease-in-out;
 
                     @media screen and (max-width: 1024px) {
                         font-size: 20px;
@@ -66,27 +70,21 @@
         }
         .cv-link {
             display: inline-block;
-            background: $white;
-            border: 1px solid $white;
+            background: var(--btnBg);
+            border: none;
             border-radius: 5px;
-            color: $bgColor;
+            color: $white;
             font-family: $bodyFont;
-            padding: 5px 10px;
-            transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+            padding: 7px 10px;
+            transition: background 0.2s ease-in-out;
 
             &:hover {
-                background: transparent;
-                color: $white;
-
-                .fa-solid {
-                    color: $white;
-                }
+                background: var(--btnBgHover);
             }
 
             .fa-solid {
-                color: $bgColor;
+                color: $white;
                 margin-right: 10px;
-                transition: color 0.2s ease-in-out;
             }
         }    
     }
