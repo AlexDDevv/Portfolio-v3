@@ -25,12 +25,13 @@
     }
     .project-text {
         p {
-            color: $white;
+            color: var(--textColor);
             font-family: $bodyFont;
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 25px;
             text-align: center;
+            transition: color 0.2s ease-in-out;
 
             @media screen and (max-width: 768px) {
                 font-size: 18px;
@@ -45,7 +46,8 @@
                 text-align: left;
 
                 span {
-                    color: $grayColor;
+                    color: var(--titleColor);
+                    transition: color 0.2s ease-in-out;
                 }
             }
         }
@@ -57,13 +59,14 @@
 
         .techno-project {
             background: transparent;
-            border: 1px solid $grayColor;
+            border: 1px solid var(--textColor);
             border-radius: 5px;
-            color: $grayColor;
+            color: var(--textColor);
             font-family: $bodyFont;
             font-size: 16px;
             font-weight: 600;
             padding: 5px 15px;
+            transition: border 0.2s ease-in-out, 0.2s ease-in-out;
         }
     }
     .link-container {
@@ -72,9 +75,9 @@
 
         .project-link {
             background: transparent;
-            border: 1px solid $white;
+            border: 1px solid var(--titleColor);
             border-radius: 5px;
-            color: $white;
+            color: var(--titleColor);
             font-family: $bodyFont;
             font-size: 14px;
             font-weight: 600;
@@ -82,8 +85,8 @@
             transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 
             &:hover {
-                background: $white;
-                color: $black;
+                background: var(--titleColor);
+                color: var(--bentoBg);
             }
         }
     }
@@ -93,7 +96,7 @@
         right: 0;
         height: 30px;
         width: 30px;
-        border: 1px solid $grayColor;
+        border: 1px solid var(--textColor);
         border-radius: 50%;
         @include center;
         padding: 10px;
@@ -101,16 +104,16 @@
         transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
 
         &:hover {
-            border-color: $white;
+            border-color: var(--titleColor);
             transform: scale(1.2);
 
             .fa-solid {
-                color: $white;
+                color: var(--titleColor);
             }
         }
 
         .fa-solid {
-            color: $grayColor;
+            color: var(--textColor);
             font-size: 16px;
             transition: color 0.2s ease-in-out;
         }

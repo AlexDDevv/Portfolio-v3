@@ -1,6 +1,8 @@
 .nav-bar {
-    border: 1px solid rgb(35, 35, 35);
+    border: 1px solid var(--navBg);
     border-radius: 80px;
+    transition: border 0.2s ease-in-out;
+
 
     @media screen and (max-width: 425px) {
         order: 2;
@@ -34,7 +36,7 @@
                 border-radius: 80px;
                 font-family: $bodyFont;
                 padding: 12px 55px;
-                transition: color 0.5s 0.1s ease-in-out, background 0.5s 0.1s ease-in-out;
+                transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
                 @media screen and (max-width: 1280px) {
                     padding: 10px 40px;
@@ -49,11 +51,11 @@
                 }
             }
             .nav-link {
-                color: $grayColor
+                color: var(--textColor);
             }
             .active-nav-link {
-                background: rgb(35, 35, 35);
-                color: $white;
+                background: var(--navBg);
+                color: var(--titleColor);
             }
         }
     }

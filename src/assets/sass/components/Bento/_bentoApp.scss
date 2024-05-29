@@ -4,6 +4,7 @@
     background-size: cover;
 
     .title {
+        color: $white;
         font-size: 24px;
 
         @media screen and (max-width: 768px) {
@@ -11,14 +12,6 @@
         }
         @media screen and (max-width: 425px) {
             margin-bottom: 5px;
-        }
-    }
-    .subtitle {
-        color: $grayColor;
-        font-size: 16px;
-
-        @media screen and (max-width: 768px) {
-            font-size: 14px;
         }
     }
 }
