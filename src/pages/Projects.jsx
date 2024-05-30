@@ -18,6 +18,7 @@ const Projects = () => {
     const goBack = () => {
         setShowDetails(false)
         setSelectedProject(null)
+        window.scrollTo(0, 0)
     }
 
     return (
