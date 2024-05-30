@@ -130,3 +130,13 @@ h2, h3 {
 	width: 1px !important;
 	white-space: nowrap !important;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--btnBgHover);
+    border-radius: 5px;
+}
