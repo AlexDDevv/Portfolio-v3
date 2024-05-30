@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 export default function ProjectCarrousel({ img, title }) {
     return (
-        <Carousel className="carrousel" showThumbs={false} showStatus={false} useKeyboardArrows={true}>
+        <Carousel className="carrousel" showThumbs={false} showStatus={false} useKeyboardArrows={true} showIndicators={img.length <= 1 ? false : true}>
             {img.map((img, idx) => (
                 <CarrouselImg
                     key={idx}
