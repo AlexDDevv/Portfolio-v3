@@ -30,7 +30,7 @@ const Projects = () => {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                    <h1>My projects</h1>
+                    <h1>Mes projets</h1>
                     <section className="projects-container">
                         {dataProjects.map(project => (
                             <BentoProjects
