@@ -1,45 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function DarkMode() {
-    const setDarkMode = () => {
-        document.querySelector("body").setAttribute("data-theme", "dark")
-        localStorage.setItem("selectedTheme", "dark")
-    }
-    const setLightMode = () => {
-        document.querySelector("body").setAttribute("data-theme", "light")
-        localStorage.setItem("selectedTheme", "light")
-    }
+    const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-    const selectedTheme = localStorage.getItem("selectedTheme") || "dark";
+    const applyTheme = (theme) => {
+        document.querySelector("body").setAttribute("data-theme", theme);
+    };
 
-    if (selectedTheme === "dark") {
-        setDarkMode();
-    } else {
-        setLightMode();
-    }
+    useEffect(() => {
+        applyTheme(theme);
+
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => {
+            const newTheme = e.matches ? 'dark' : 'light';
+            setTheme(newTheme);
+            applyTheme(newTheme);
+        };
+
+        mediaQuery.addEventListener('change', handleChange);
+
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, [theme]);
 
     const toggleTheme = (e) => {
-        if (e.target.checked) {
-            setDarkMode()
-        } else {
-            setLightMode()
-        }
-    }
+        const newTheme = e.target.checked ? 'dark' : 'light';
+        setTheme(newTheme);
+        applyTheme(newTheme);
+    };
 
-  return (
-    <div className='dark-mode'>
-        <input 
-            type="checkbox" 
-            className='dark-mode-input' 
-            id="darkModeToggle" 
-            onChange={toggleTheme}
-            defaultChecked={selectedTheme === "dark"}
-        />
-        <label htmlFor="darkModeToggle" className='dark-mode-label'>
-            <span className="fa-solid fa-sun sun"></span>
-            <span className="fa-solid fa-moon moon"></span>
-            <span className="sr-only">Changer la couleur du thème du site</span>
-        </label>
-    </div>
-  )
+    return (
+        <div className='dark-mode'>
+            <input 
+                type="checkbox" 
+                className='dark-mode-input' 
+                id="darkModeToggle" 
+                onChange={toggleTheme}
+                checked={theme === 'dark'}
+            />
+            <label htmlFor="darkModeToggle" className='dark-mode-label'>
+                <span className="fa-solid fa-sun sun"></span>
+                <span className="fa-solid fa-moon moon"></span>
+                <span className="sr-only">Changer la couleur du thème du site</span>
+            </label>
+        </div>
+    );
 }
