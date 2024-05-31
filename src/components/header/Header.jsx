@@ -1,12 +1,15 @@
 import React from 'react'
 import data from "../../data/data.json"
+import Logo from './Logo'
 import LinkNav from "./LinkNav"
 import DarkMode from '../DarkMode'
 
 export default function Header() {
     return (
         <header className='header'>
-            <div className='logo'>AD</div>
+            <div className='logo'>
+                <Logo />
+            </div>
             <nav className='nav-bar'>
                 <ul className="nav-list">
                     {data.navlink.map(item => (
