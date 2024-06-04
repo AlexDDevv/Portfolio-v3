@@ -143,10 +143,17 @@
                 display: none;
             }
         }
+        &:hover {
+            .text-bento, .fa-solid {
+                color: $white;
+            }
+        }
 
         .text-bento {
             font-size: 20px;
             margin-bottom: 0;
+            color: $grayColor;
+            transition: color 0.2s ease-in-out;
 
             @media screen and (max-width: 1280px) {
                 font-size: 18px;
@@ -154,7 +161,8 @@
             }
         }
         .fa-solid {
-            color: $white;
+            color: $grayColor;
+            transition: color 0.2s ease-in-out;
         }
     }
 }
