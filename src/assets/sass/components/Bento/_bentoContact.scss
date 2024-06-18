@@ -1,0 +1,87 @@
+.contactBento {
+    background-color: var(--bentoBg);
+    padding: 25px 30px;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .title {
+        color: var(--titleColor);
+        font-family: $titleFont;
+        font-size: 32px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 28px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 24px;
+        }
+    }
+    .separate-bar {
+        background: var(--navBg);
+        height: 1px;
+        width: 100%;
+        transition: background 0.2s ease-in-out;
+
+        @media screen and (max-width: 1280px) {
+            width: 90%;
+        }
+    }
+    .subtitle {
+        color: var(--textColor);
+        font-family: $bodyFont;
+        font-size: 22px;
+        line-height: 28px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        @media screen and (max-width: 640px) {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            background: var(--btnBg);
+            border: none;
+            border-radius: 20px;
+            height: 30px;
+            padding: 0 15px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out;
+
+            a {
+                color: $white;
+                font-family: "Lato", sans-serif;
+            }
+
+            &:hover {
+                background: var(--btnBgHover);
+            }
+        }
+        .btn-copy {
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            padding: 0 15px;
+            margin-bottom: 0;
+        }
+        .copy-msg {
+            display: none;
+        }
+    }
+}
