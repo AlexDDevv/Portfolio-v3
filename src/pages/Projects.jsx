@@ -36,6 +36,7 @@ const Projects = () => {
                             <BentoProjects
                                 key={project.id}
                                 onClick={() => renderDetails(project)}
+                                titleBento={project.titleBento}
                                 title={project.title}
                                 icon={project.icon}
                                 description={project.description}
