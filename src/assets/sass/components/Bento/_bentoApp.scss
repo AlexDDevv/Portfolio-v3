@@ -2,35 +2,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0 0 40px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        padding-left: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 20px 0 0 30px;
+    }
 
     .title {
         color: $white;
         font-size: 24px;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             font-size: 20px;
         }
         @media screen and (max-width: 425px) {
             margin-bottom: 5px;
         }
     }
-}
-.library {
-    background-image: url("/bgBento/bgLibrary.webp");
-    padding: 30px 0 0 50px;
-    overflow: hidden;
-    grid-area: b;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @media screen and (max-width: 768px) {
-        padding: 20px 0 0 30px;
-    }
-    @media screen and (max-width: 425px) {
-        padding: 20px 30px;
-    }
-
     .cover {
         display: flex;
         justify-content: flex-end;
@@ -40,38 +35,29 @@
         }
 
         img {
-            max-height: 200px;
-            border-radius: 15px;
+            width: 80%;
+            border-top-left-radius: 15px;
 
-            @media screen and (max-width: 640px) {
+            @media screen and (max-width: 1024px) {
                 width: 100%;
-                object-fit: cover;
-                object-position: center 0;
+            }
+            @media screen and (max-width: 768px) {
+                width: 90%;
+            }
+            @media screen and (max-width: 640px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 425px) {
+                width: 75%;
             }
         }
     }
 }
+.library {
+    background-image: url("/bgBento/bgLibrary.webp");
+    grid-area: b;
+}
 .space {
     background-image: url("/bgBento/bgSpace.webp");
-    padding: 30px 0 0 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
     grid-area: d;
-
-    @media screen and (max-width: 768px) {
-        padding: 20px 0 0 30px;
-    }
-
-    .cover {
-        height: 75%;
-        display: flex;
-        justify-content: flex-end;
-
-        img {
-            height: 100%;
-            border-top-left-radius: 20px;
-        }
-    }
 }
