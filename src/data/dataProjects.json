@@ -1,6 +1,26 @@
 [
     {
+        "id": "price",
+        "titleBento": "Challenge Spikes",
+        "title": "Ça vaut son prix?",
+        "icon": "/icons/cash.png",
+        "presentation": "Projet de la plateforme de challenges front-end Spikes.",
+        "description": "Challenge permettant d'améliorer ses compétences en développement front-end.",
+        "objectif": "Ce challenge avait pour but d'améliorer son CSS en créant des pattern background complexes, afin d'avoir un rendu moderne, esthétique et design.",
+        "techno": [
+            "React",
+            "Framer-motion"
+        ],
+        "repo": "https://github.com/AlexDDevv/LP-Spikes-Challenge",
+        "website": "https://lp-spikes-challenge.vercel.app/",
+        "cover": "/bgBento/bgBentoPrice.webp",
+        "images": [
+            "/carrouselImg/price/price.webp"
+        ]
+    },
+    {
         "id": "space",
+        "titleBento": "Challenge Frontend",
         "title": "Space Tourism",
         "icon": "/icons/planet.png",
         "presentation": "Réalisation d'un challenge de la plateforme Frontend Mentor.",
@@ -9,8 +29,6 @@
         "techno": [
             "React",
             "Framer-motion",
-            "SASS",
-            "Responsive Web Design",
             "Figma"
         ],
         "repo": "https://github.com/AlexDDevv/space-tourism",
@@ -25,6 +43,7 @@
     },
     {
         "id": "library",
+        "titleBento": "Bibliothèque app",
         "title": "My little Library",
         "icon": "/icons/book.png",
         "presentation": "Bibliothèque numérique permettant de chercher des livres, d'enregistrer ceux que l'on a déjà lu ou que l'on souhaite lire.",
@@ -32,9 +51,7 @@
         "objectif": "Aimant beaucoup lire, j'ai souhaité créer un projet autour de la lecture, qui pourrait me servir à garder une trace de tous les livres que j'ai lu ou d'avoir une liste de ceux que j'aimerais lire. J'ai mis à contribution les compétences que j'ai acquises durant ma formation, notamment React. J'ai utilisé l'API Google Books pour récupérer les données. Ce projet m'a aussi permis de travailler ma créativité, ayant fait le design moi-même. Plusieurs fonctionnalités seront rajoutées dans le futur.",
         "techno": [
             "React",
-            "SASS",
             "Google API",
-            "Responsive Web Design",
             "Design"
         ],
         "repo": "https://github.com/AlexDDevv/My-library",
@@ -51,6 +68,7 @@
     },
     {
         "id": "portfolio",
+        "titleBento": "Portfolio",
         "title": "Ancien portfolio",
         "icon": "/icons/resume.png",
         "presentation": "Projet formation OpenClassrooms: conception de mon portfolio.",
@@ -58,9 +76,6 @@
         "objectif": "Pour ce projet, je devais réaliser un portfolio pour mettre en avant mon travail et mes réalisations auprès des recruteurs. Le choix des technologies était libre, mais il fallait respecter certaines conditions pour valider le projet: présenter son profil avec la ou les formations suivies et ses compétences, présenter au moins deux projets avec une courte description, les compétences utilisées et un lien vers le repository ou le site, être accessible en ligne et être responsive.",
         "techno": [
             "React",
-            "SASS",
-            "Animation CSS",
-            "Responsive Web Design",
             "Design"
         ],
         "repo": "https://github.com/AlexDDevv/Portfolio-v2",
@@ -74,6 +89,7 @@
     },
     {
         "id": "bank",
+        "titleBento": "Banque app",
         "title": "Argent Bank",
         "icon": "/icons/bank.png",
         "presentation": "Projet formation OpenClassrooms: implémenter le front-end d'une application bancaire avec React.",
@@ -98,13 +114,14 @@
     },
     {
         "id": "debug",
+        "titleBento": "Debug",
         "title": "724events",
         "icon": "/icons/bug.png",
         "presentation": "Projet formation OpenClassrooms: débugger le site d'une agence d'événementiel.",
-        "description": "Débuggage complet d'une refonte de site vitrine.",
-        "objectif": "Pour ce projet, je devais effectuer un débuggage complet et optimiser le site web de 724events. J'ai commencé par une analyse approfondie du code source existant, en identifiant les problèmes techniques qui entravaient les performances du site. Mon objectif était de garantir que le site soit fluide et réactif pour les visiteurs. J'ai utilisé des tests unitaires pour vérifier chaque composant du site. Les React Dev Tools ont été essentiels pour analyser et optimiser le code. Grâce à ces outils, j'ai pu cibler les zones spécifiques nécessitant des améliorations. En parallèle, j'ai finalisé le cahier de recette, créant des scénarios détaillés pour vérifier que chaque fonctionnalité du site fonctionnait comme prévu. Cela incluait des tests de navigation, de formulaire, de performance, et bien d'autres.",
+        "description": "Debug complet d'une refonte de site vitrine.",
+        "objectif": "Pour ce projet, je devais effectuer un debug complet et optimiser le site web de 724events. J'ai commencé par une analyse approfondie du code source existant, en identifiant les problèmes techniques qui entravaient les performances du site. Mon objectif était de garantir que le site soit fluide et réactif pour les visiteurs. J'ai utilisé des tests unitaires pour vérifier chaque composant du site. Les React Dev Tools ont été essentiels pour analyser et optimiser le code. Grâce à ces outils, j'ai pu cibler les zones spécifiques nécessitant des améliorations. En parallèle, j'ai finalisé le cahier de recette, créant des scénarios détaillés pour vérifier que chaque fonctionnalité du site fonctionnait comme prévu. Cela incluait des tests de navigation, de formulaire, de performance, et bien d'autres.",
         "techno": [
-            "Débuggage",
+            "Debug",
             "Optimisation",
             "Tests Unitaires",
             "React Dev Tools"
@@ -117,6 +134,7 @@
     },
     {
         "id": "nina",
+        "titleBento": "Optimisation",
         "title": "Nina Carducci",
         "icon": "/icons/photographer.png",
         "presentation": "Projet formation OpenClassrooms: optimiser le référencement d'un site de photographe.",
@@ -138,6 +156,7 @@
     },
     {
         "id": "kasa",
+        "titleBento": "Location app",
         "title": "Kasa",
         "icon": "/icons/agence.png",
         "presentation": "Projet formation OpenClassrooms: créer une application web de location immobilière avec React.",
@@ -145,8 +164,6 @@
         "objectif": "Pour ce projet, je devais développer l'ensemble de l'application en modernisant la plateforme avec une stack complète en JS plus récente, afin d'offrir une meilleure expérience utilisateur sur différentes tailles d'écrans, tout en restant le plus fidèle possible aux maquettes fournies. Pour ce faire, j'ai introduis des éléments avancés, comme un carrousel pour afficher les images des logements, l'implémentation d'un collapse pour améliorer l'UX et la gestion dynamique des fiches logements à partir de données internes.",
         "techno": [
             "React",
-            "SASS",
-            "Responsive Web Design",
             "Figma"
         ],
         "repo": "https://github.com/AlexDDevv/P8-Kasa",
@@ -160,14 +177,13 @@
     },
     {
         "id": "bluel",
+        "titleBento": "Portfolio",
         "title": "Sophie Bluel",
         "icon": "/icons/house.png",
         "presentation": "Projet formation OpenClassrooms: conception du site portfolio d'une architecte d'intérieur.",
         "description": "Conception du site portfolio d'une architecte d'intérieur.",
         "objectif": "Pour ce projet, je devais développer plusieurs fonctionnalités importantes du site. Je devais notamment créer la page de présentation des travaux de l'architecte avec un système de filtre par catégories, la page de connexion sécurisée de l'administrateur et une fenêtre modale pour ajouter et/ou supprimer un projet dans la galerie de présentation. Le tout a été généré dynamiquement avec Javascript et en communiquant avec une API.",
         "techno": [
-            "HTML5",
-            "CSS3",
             "JS",
             "Node.js",
             "Swagger",
@@ -182,28 +198,6 @@
             "/carrouselImg/bluel/bluel4.webp",
             "/carrouselImg/bluel/bluel5.webp",
             "/carrouselImg/bluel/bluel6.webp"
-        ]
-    },
-    {
-        "id": "food",
-        "title": "OhMyFood",
-        "icon": "/icons/menu.png",
-        "presentation": "Projet formation OpenClassrooms: améliorer l'interface d'un site mobile avec des animations CSS.",
-        "description": "Site web répertoriant les menus de restaurants gastronomiques.",
-        "objectif": "Pour ce projet, je devais créer le site d'une start-up en mobile first, pour prioriser l'optimisation de l'expérience utilisateur sur les appareils mobiles, garantissant une expérience fluide et réactive quel que soit l'appareil qu'ils utilisent. J'ai intégré des animations fluides et naturelles pour améliorer l'intéractivité du site, offrant ainsi une expérience utilisateur agréable.",
-        "techno": [
-            "HTML5",
-            "SASS",
-            "Animations CSS",
-            "Responsive Web Design"
-        ],
-        "repo": "https://github.com/AlexDDevv/P4-OhMyFood",
-        "website": "https://p4-oh-my-food.vercel.app/",
-        "cover": "/bgBento/bgBentoFood.webp",
-        "images": [
-            "/carrouselImg/food/food1.webp",
-            "/carrouselImg/food/food2.webp",
-            "/carrouselImg/food/food3.webp"
         ]
     }
 ]
