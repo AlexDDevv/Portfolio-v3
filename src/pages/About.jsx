@@ -7,10 +7,12 @@ const About = () => {
         <main className="main-about">
             <div className="about-container">
                 <section className="about-me">
-                    <h1 className="hello">Bonjour!</h1>
-                    <h2 className='name'>Je suis Alexis</h2>
+                    <h1 className='name'>Je suis Alexis</h1>
                     <p className="description">
-                        <strong>Développeur web</strong> à la recherche d'une entreprise. Je me suis formé en parallèle de mon travail pendant un an, puis j'ai suivi une formation d'intégrateur web de 9 mois avec OpenClassrooms. Je souhaiterai maintenant faire une formation en alternance afin d'acquérir une expérience professionnelle, de découvrir le travail en équipe et de continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime.
+                        <strong>Développeur web</strong> en recherche d'entreprises pour réaliser une formation JS d'une durée de 15 mois avec la Wild Code School. Le rythme sera d'une semaine de formation et trois semaines d'entreprises.
+                    </p>
+                    <p className="description">
+                        Souhaitant acquérir une expérience professionnelle, travailler en équipe et continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime, l'alternance est une suite logique à mon parcours d'autodidacte et d'intégrateur web avec OpenClassrooms.
                     </p>
                 </section>
                 <a href="https://delporte-alexis-cv.vercel.app/" target='_blank' className='cv-link'>
