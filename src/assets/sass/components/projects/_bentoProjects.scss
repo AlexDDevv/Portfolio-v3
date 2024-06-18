@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 15px;
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
 
     @media screen and (max-width: 1024px) {
         width: 100%;
@@ -26,59 +26,94 @@
     }
 
     .project-bento {
-        height: 250px;
-        perspective: 2000px;
-        perspective-origin: top;
+        height: 300px;
         position: relative;
         cursor: pointer;
-        box-shadow: none;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: padding 0.2s ease-in-out;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 30px;
+            height: 0%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: height 0.2s ease-in-out;
+        }
 
         &:hover {
-            .card {
-                transform: rotateY(180deg);
+            &:before {
+                height: 100%;
             }
-            &:nth-child(even) {
-                .card {
-                    transform: rotateY(-180deg);
-               }
+            .text-container {
+                border-radius: 30px;
+                height: 100%;
+                padding-bottom: 25px;
+
+                .wrapper {
+                    max-height: 100%;
+                    opacity: 1;
+                }
             }
         }
 
-        .card {
+        .cover {
             border-radius: 30px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
-            position: relative;
+            width: 100%;
             height: 100%;
-            transform-style: preserve-3d;
-            transition: transform 0.5s cubic-bezier(0.86,0,0.07,1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -50;
 
-            .front-card, .back-card {
-                border-radius: 30px;
-                position: absolute;
+            img {
                 width: 100%;
                 height: 100%;
-                backface-visibility: hidden;
-                -webkit-backface-visibility: hidden;
+                border-radius: 30px;
             }
-            .front-card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                background: var(--bentoBg);
-                padding: 20px 30px 25px 30px;
-                transition: background 0.2s ease-in-out;
-    
-                .title-project {
-                    @include between;
+        }
+        .text-container {
+            background: transparent;
+            backdrop-filter: blur(5px);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 60px;
+            justify-content: flex-end;
+            padding: 20px 30px 0 30px;
+            transition: height 0.2s ease-in-out, padding 0.2s ease-in-out, border-radius 0.2s ease-in-out;
 
-                    .title {
-                        color: var(--titleColor);
-                        transition: color 0.2s ease-in-out;
-                    }
+            .title-project {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+    
+                .title {
+                    color: $white;
+                    font-size: 22px;
+                    transition: color 0.2s ease-in-out;
                 }
+            }
+            .wrapper {
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    
                 .description-project {
+                    margin-bottom: 15px;
+    
                     .description {
-                        color: var(--textColor);
+                        color: rgba(255, 255, 255, 0.9);
                         font-family: $bodyFont;
                         font-size: 16px;
                         line-height: 23px;
@@ -86,30 +121,22 @@
                     }
                 }
                 .stack-project {
-                    @include center;
+                    display: flex;
+                    align-items: center;
                     flex-wrap: wrap;
                     gap: 10px 15px;
         
                     .techno-project {
                         background: transparent;
                         border-radius: 5px;
-                        border: 1px solid var(--textColor);
-                        color: var(--textColor);
+                        border: 1px solid rgba(255, 255, 255, 0.9);
+                        color: rgba(255, 255, 255, 0.9);
                         font-family: $bodyFont;
                         font-size: 12px;
                         font-weight: 600;
                         padding: 4px 10px;
                         transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
                     }
-                }
-            }
-            .back-card {
-                transform: rotateY(180deg);
-
-                .bento-cover {
-                    border-radius: 30px;
-                    height: 100%;
-                    width: 100%;
                 }
             }
         }
