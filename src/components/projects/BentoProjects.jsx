@@ -1,15 +1,18 @@
 import React from 'react'
 import TechnoProject from './TechnoProject'
 
-export default function BentoProjects({ onClick, title, icon, description, techno, cover }) {
+export default function BentoProjects({ onClick, titleBento, title, icon, description, techno, cover }) {
     return (
         <div className='bento-item project-bento' onClick={onClick}>
-            <div className="card">
-                <div className="front-card">
-                    <div className="title-project">
-                        <h2 className="title">{title}</h2>
-                        <img src={icon} alt={`${title} project icon`} />
-                    </div>
+            <div className="cover">
+                <img src={cover} alt="" />
+            </div>
+            <div className="text-container">
+                <div className="title-project">
+                    <h2 className="title">{titleBento}</h2>
+                    <img src={icon} alt={`${title} project icon`} />
+                </div>
+                <div className="wrapper">
                     <div className="description-project">
                         <p className="description">{description}</p>
                     </div>
@@ -21,9 +24,6 @@ export default function BentoProjects({ onClick, title, icon, description, techn
                             />
                         ))}
                     </div>
-                </div>
-                <div className="back-card">
-                    <img src={cover} alt={`${title} project cover`} className='bento-cover' />
                 </div>
             </div>
         </div>
