@@ -4,12 +4,16 @@
 @import "./components/header/navBar";
 @import "./components/header/darkMode";
 @import "./components/Bento/main";
+@import "./components/Bento/bentoGithub";
+@import "./components/Bento/bentoContact";
+@import "./components/Bento/bentoSkills";
 @import "./components/Bento/bentoText";
 @import "./components/Bento/bentoApp";
-@import "./components/Bento/bentoSocial";
+@import "./components/Bento/bentoTwitter";
 @import "./components/about/about";
 @import "./components/projects/main";
 @import "./components/projects/bentoProjects";
 @import "./components/projects/projectDetails";
 @import "./components/contact/contact";
+@import "./components/contact/copyEmail";
 @import "./components/footer/footer"
