@@ -17,9 +17,9 @@ export default function ProjectDetails({ img, title, presentation, objectif, tec
                     img={img}
                     title={title}
                 />
-                <div className="project-text">
-                    <p className="project-presentation">{presentation}</p>
-                    <p className="project-objectif"><span>Objectif:</span> {objectif}</p>
+                <div className="text-container">
+                    <h2 className="project-text presentation">{presentation}</h2>
+                    <p className="project-text objectif"><span>Objectif:</span> {objectif}</p>
                 </div>
                 <div className="stack-project">
                     {techno.map((tech, i) => (
