@@ -1,42 +1,19 @@
 {
-    "text": [
+    "btn": [
         {
             "id": 1,
-            "name": "presentation",
-            "title": "développeur web",
-            "subtitle": "Journal",
-            "events": [
-                {
-                    "date": "29/04/24: ",
-                    "content": "Création de mon entreprise"
-                },
-                {
-                    "date": "29/04/24: ",
-                    "content": "Diplôme: intégrateur web"
-                },
-                {
-                    "date": "10/07/20: ",
-                    "content": "Diplôme: préparateur en pharmacie"
-                },
-                {
-                    "date": "10/07/17: ",
-                    "content": "Première année d'école de diététique"
-                },
-                {
-                    "date": "01/12/15: ",
-                    "content": "Quelques mois de STAPS"
-                },
-                {
-                    "date": "10/07/15: ",
-                    "content": "Diplôme: BAC STL"
-                }
-            ]
+            "link": "https://www.linkedin.com/in/alexis-delporte-8371362b8/",
+            "contact": "Linkedin"
         },
         {
-            "id": "2",
-            "name": "adventure",
-            "title": "Mon aventure depuis deux ans",
-            "subtitle": "Quelques accomplissements 🎉",
+            "id": 2,
+            "link": "https://delporte-alexis-cv.vercel.app/",
+            "contact": "Mon CV"
+        }
+    ],
+    "text": [
+        {
+            "id": 3,
             "events": [
                 "Apprendre HTML/CSS et JS en parallèle de mon travail",
                 "Mon premier portfolio",
@@ -50,32 +27,21 @@
     ],
     "app": [
         {
-            "id": "3",
+            "id": 4,
             "name": "library",
             "title": "My little Library",
             "subtitle": "Projet personnel 📖",
             "cover": "/MyLittleLibrary.webp"
         },
         {
-            "id": "4",
+            "id": 5,
             "name": "space",
             "title": "Space Tourism",
-            "subtitle": "Challenge Frontend Mentor 🚀",
+            "subtitle": "Frontend Mentor 🚀",
             "cover": "/SpaceTourism.webp"
         }
     ],
-    "social": [
-        {
-            "id": 5,
-            "name": "instagram",
-            "avatar": "/avatar.webp",
-            "profil": "sport.devweb",
-            "pseudo": "Alexis D",
-            "link": "https://www.instagram.com/sport.devweb/",
-            "icon": "fa-brands fa-instagram",
-            "title": "Instagram",
-            "cover": "/profilInsta.webp"
-        },
+    "twitter": [
         {
             "id": 6,
             "name": "twitter",
@@ -86,17 +52,29 @@
             "icon": "fa-brands fa-x-twitter",
             "title": "X",
             "tweet": "J'ai rejoint Spikes, une plateforme inspirante qui propose des challenges front-end afin de continuer à s'améliorer."
-        },
+        }
+    ], 
+    "github": [
         {
             "id": 7,
             "name": "github",
-            "avatar": "/githubProfil.webp",
-            "profil": "AlexDDevv",
-            "pseudo": "Alexis D",
             "link": "https://github.com/AlexDDevv",
             "icon": "fa-brands fa-github",
             "title": "Github",
-            "cover": "/githubPreview.webp"
+            "cover": [
+                "/mockupPrice.webp",
+                "/mockupSaas.webp",
+                "/mockupSpace.webp",
+                "/mockupLibrary.webp"
+            ]
         }
+    ],
+    "skills": [
+        "/icons/react.png",
+        "/icons/typescript.png",
+        "/icons/tailwind.png",
+        "/icons/nextjs.png",
+        "/icons/postgresql.png",
+        "/icons/figma.png"
     ]
 }

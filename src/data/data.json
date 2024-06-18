@@ -19,19 +19,14 @@
     ],
     "socialLink": [
         {
-            "link": "https://github.com/AlexDDevv",
-            "title": "Github",
-            "icon": "fa-brands fa-github"
-        },
-        {
             "link": "https://www.linkedin.com/in/alexis-delporte-8371362b8/",
             "title": "Linkedin",
             "icon": "fa-brands fa-linkedin-in"
         },
         {
-            "link": "https://www.instagram.com/sport.devweb/",
-            "title": "Instagram",
-            "icon": "fa-brands fa-instagram"
+            "link": "https://github.com/AlexDDevv",
+            "title": "Github",
+            "icon": "fa-brands fa-github"
         },
         {
             "link": "https://twitter.com/Sport_DevWeb",
