@@ -56,6 +56,7 @@
         }
 
         .contact-btn {
+            @include center;
             background: var(--btnBg);
             border: none;
             border-radius: 20px;
