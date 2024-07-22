@@ -15,7 +15,7 @@ const About = () => {
                         Souhaitant acquérir une expérience professionnelle, travailler en équipe et continuer à apprendre et à grandir dans ce domaine qui me passionne et m'anime, l'alternance est une suite logique à mon parcours d'autodidacte et d'intégrateur web avec OpenClassrooms.
                     </p>
                 </section>
-                <a href="https://delporte-alexis-cv.vercel.app/" target='_blank' className='cv-link'>
+                <a href="/CV.pdf" target='_blank' className='cv-link'>
                     <span className="fa-solid fa-file" aria-hidden="true"></span>
                     <span className="sr-only">Redirection vers mon CV en ligne</span>
                     Mon CV
